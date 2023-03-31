@@ -48,20 +48,17 @@ void dhruv(abhi a,divy d){
 	sec=a.sec+d.sec;
 	cout<<endl;
 	
-	if(min>=60 ){
+	while(min>=60 ){
 		hour=hour+1;
 		min=min-60;
 	}
-	if(sec>=60 ){
+	while(sec>=60 ){
 		min=min+1;
-		sec=sec-60;
-		cout<<hour<<"hr:"<<min<<"min:"<<sec<<"sec";
-	}
-	else{
+		sec=sec-60;}
+	
 		cout<<hour<<"hr:"<<min<<"min:"<<sec<<"sec";
 		
-	}
-};
+	};
 
 
 int main(){
